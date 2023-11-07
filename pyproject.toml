@@ -6,7 +6,7 @@ authors = [
     {name = "songbinghui", email = "soongbinghui@gmail.com"},
 ]
 dependencies = [
-    "jupyterlab>=4.0.7",
+    "jupyterlab>=4.0.8",
 ]
 requires-python = ">=3.10"
 readme = "README.md"
