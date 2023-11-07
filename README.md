@@ -2,6 +2,7 @@
 
 [![pdm-managed](https://img.shields.io/badge/pdm-managed-blueviolet)](https://pdm.fming.dev)
 ![jupyterlab](https://img.shields.io/badge/Jupyterlab-F37626?logo=jupyter&labelColor=grey&logoColor=F37626)
+![numpy](https://img.shields.io/badge/Numpy-black?logo=numpy)
 
 ## notebook 启动
 
@@ -17,5 +18,9 @@
 ## 目录
 
 - [深度学习是什么？](https://nbviewer.jupyter.org/github/binghuis/shallow-learning/blob/main/src/shallow_learning/notebooks/intro.ipynb)
-
+- 机器学习 sigmoid
+- 神经网络、神经元
+- 逻辑回归、损失函数
+- 梯度下降算法
+- 导数计算
 
