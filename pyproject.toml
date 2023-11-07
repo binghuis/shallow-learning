@@ -13,6 +13,4 @@ readme = "README.md"
 license = {text = "MIT"}
 
 [tool.pdm.scripts]
-jump = {shell = "cd ./src/shallow_learning/notebooks"}
 up = "jupyter lab"
-learn = {composite = ["jump", "up"]}
