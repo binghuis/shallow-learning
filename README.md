@@ -17,10 +17,12 @@
 
 ## 目录
 
-- [深度学习是什么？](https://nbviewer.jupyter.org/github/binghuis/shallow-learning/blob/main/src/shallow_learning/notebooks/intro.ipynb)
-- 机器学习 sigmoid
-- 神经网络、神经元
-- 逻辑回归、损失函数
-- 梯度下降算法
-- 导数计算
+- [numpy](https://nbviewer.jupyter.org/github/binghuis/shallow-learning/blob/main/src/shallow_learning/notebooks/np.ipynb)
+- 感知机、多层感知机
+- 神经元、神经网络
+- 激活函数
+- 损失函数
+- 梯度下降
+- 收敛
+- 反向传播
 
