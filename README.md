@@ -1,4 +1,4 @@
-# 浅学 NLP
+# 浅学 LLM
 
 [![pdm-managed](https://img.shields.io/badge/pdm-managed-blueviolet)](https://pdm.fming.dev)
 ![jupyterlab](https://img.shields.io/badge/Jupyterlab-F37626?logo=jupyter&labelColor=grey&logoColor=F37626)
@@ -15,10 +15,8 @@
     
     `pdm up`
 
-## 目录
-
 - [numpy](https://nbviewer.jupyter.org/github/binghuis/shallow-learning/blob/main/src/shallow_learning/notebooks/nlp.ipynb)
 
-### NLP
+### Prompt Engineering
 
 ### LLM
