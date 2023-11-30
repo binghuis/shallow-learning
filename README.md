@@ -15,8 +15,8 @@
     
     `pdm up`
 
-- [numpy](https://nbviewer.jupyter.org/github/binghuis/shallow-learning/blob/main/src/shallow_learning/notebooks/nlp.ipynb)
 
-### Prompt Engineering
+- [令人失望的提示词工程](https://nbviewer.jupyter.org/github/binghuis/shallow-learning/blob/main/src/shallow_learning/disappointing_prompt_engineering.ipynb)
+
 
 ### LLM
