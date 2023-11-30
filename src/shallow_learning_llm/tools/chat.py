@@ -15,7 +15,7 @@ client = AzureOpenAI(
 )
 
 
-def get_completion(messages: str | List[ChatCompletionMessageParam]):
+def completion(messages: str | List[ChatCompletionMessageParam]):
     if isinstance(messages, str):
         messages = [{"role": "user", "content": messages}]
     stream = client.chat.completions.create(
