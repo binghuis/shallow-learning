@@ -12,14 +12,18 @@ client = AzureOpenAI(
     api_version=os.environ["OPENAI_API_VERSION"],
     azure_endpoint=os.environ["AZURE_OPENAI_ENDPOINT"],
     api_key=os.environ["AZURE_OPENAI_API_KEY"],
+    azure_deployment="gpt-35-turbo",
 )
 
 
-def completion(messages: str | List[ChatCompletionMessageParam]):
+def completion(
+    messages: str | List[ChatCompletionMessageParam],
+    temperature=0,
+):
     if isinstance(messages, str):
         messages = [{"role": "user", "content": messages}]
     stream = client.chat.completions.create(
-        model="gpt-35-turbo", messages=messages, stream=True
+        model="gpt-3.5-turbo", messages=messages, stream=True, temperature=temperature
     )
     ret = ""
     for chunk in stream:
