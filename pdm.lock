@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["cross_platform"]
 lock_version = "4.4"
-content_hash = "sha256:c491dd0c4ced04dd68b2a2fd289b8ea3bf9bdb8bee2d5184f3e9ae1672bfc588"
+content_hash = "sha256:aa271efb7d56ebba0c069ae3bc2afc356e9f18666ee97f5fd37fa194b616b3aa"
 
 [[package]]
 name = "annotated-types"
@@ -292,6 +292,19 @@ files = [
     {file = "charset_normalizer-3.3.2-cp312-cp312-win32.whl", hash = "sha256:d965bba47ddeec8cd560687584e88cf699fd28f192ceb452d1d7ee807c5597b7"},
     {file = "charset_normalizer-3.3.2-cp312-cp312-win_amd64.whl", hash = "sha256:96b02a3dc4381e5494fad39be677abcb5e6634bf7b4fa83a6dd3112607547001"},
     {file = "charset_normalizer-3.3.2-py3-none-any.whl", hash = "sha256:3e4d1f6587322d2788836a99c69062fbb091331ec940e02d12d179c1d53e25fc"},
+]
+
+[[package]]
+name = "click"
+version = "8.1.7"
+requires_python = ">=3.7"
+summary = "Composable command line interface toolkit"
+dependencies = [
+    "colorama; platform_system == \"Windows\"",
+]
+files = [
+    {file = "click-8.1.7-py3-none-any.whl", hash = "sha256:ae74fb96c20a0277a1d615f1e4d73c8414f5a98db8b799a7931d1582f3390c28"},
+    {file = "click-8.1.7.tar.gz", hash = "sha256:ca9853ad459e787e2192211578cc907e7594e294c7ccc834310722b41b9ca6de"},
 ]
 
 [[package]]
@@ -942,6 +955,19 @@ files = [
 ]
 
 [[package]]
+name = "markdown-it-py"
+version = "3.0.0"
+requires_python = ">=3.8"
+summary = "Python port of markdown-it. Markdown parsing, done right!"
+dependencies = [
+    "mdurl~=0.1",
+]
+files = [
+    {file = "markdown-it-py-3.0.0.tar.gz", hash = "sha256:e3f60a94fa066dc52ec76661e37c851cb232d92f9886b15cb560aaada2df8feb"},
+    {file = "markdown_it_py-3.0.0-py3-none-any.whl", hash = "sha256:355216845c60bd96232cd8d8c40e8f9765cc86f46880e43a8fd22dc1a1a8cab1"},
+]
+
+[[package]]
 name = "markupsafe"
 version = "2.1.3"
 requires_python = ">=3.7"
@@ -1032,6 +1058,16 @@ dependencies = [
 files = [
     {file = "matplotlib-inline-0.1.6.tar.gz", hash = "sha256:f887e5f10ba98e8d2b150ddcf4702c1e5f8b3a20005eb0f74bfdbd360ee6f304"},
     {file = "matplotlib_inline-0.1.6-py3-none-any.whl", hash = "sha256:f1f41aab5328aa5aaea9b16d083b128102f8712542f819fe7e6a420ff581b311"},
+]
+
+[[package]]
+name = "mdurl"
+version = "0.1.2"
+requires_python = ">=3.7"
+summary = "Markdown URL utilities"
+files = [
+    {file = "mdurl-0.1.2-py3-none-any.whl", hash = "sha256:84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8"},
+    {file = "mdurl-0.1.2.tar.gz", hash = "sha256:bb413d29f5eea38f31dd4754dd7377d4465116fb207585f97bf925588687c1ba"},
 ]
 
 [[package]]
@@ -1626,6 +1662,21 @@ files = [
 ]
 
 [[package]]
+name = "redlines"
+version = "0.4.2"
+requires_python = ">=3.8,<4.0"
+summary = "Compare text, and produce human-readable differences or deltas which look like track changes in Microsoft Word."
+dependencies = [
+    "click<9.0.0,>=8.1.3",
+    "rich-click<2.0.0,>=1.6.1",
+    "rich<14.0.0,>=13.3.5",
+]
+files = [
+    {file = "redlines-0.4.2-py3-none-any.whl", hash = "sha256:f0fc90025ea138232c20d7444b4490fc48c17e822097755f0fc281bd07f9ee63"},
+    {file = "redlines-0.4.2.tar.gz", hash = "sha256:e6bc0411fc52d8095447029ba18cd194d36d251ba1c2587480ba14669e6bebaa"},
+]
+
+[[package]]
 name = "referencing"
 version = "0.30.2"
 requires_python = ">=3.8"
@@ -1676,6 +1727,35 @@ summary = "Pure python rfc3986 validator"
 files = [
     {file = "rfc3986_validator-0.1.1-py2.py3-none-any.whl", hash = "sha256:2f235c432ef459970b4306369336b9d5dbdda31b510ca1e327636e01f528bfa9"},
     {file = "rfc3986_validator-0.1.1.tar.gz", hash = "sha256:3d44bde7921b3b9ec3ae4e3adca370438eccebc676456449b145d533b240d055"},
+]
+
+[[package]]
+name = "rich"
+version = "13.7.0"
+requires_python = ">=3.7.0"
+summary = "Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal"
+dependencies = [
+    "markdown-it-py>=2.2.0",
+    "pygments<3.0.0,>=2.13.0",
+]
+files = [
+    {file = "rich-13.7.0-py3-none-any.whl", hash = "sha256:6da14c108c4866ee9520bbffa71f6fe3962e193b7da68720583850cd4548e235"},
+    {file = "rich-13.7.0.tar.gz", hash = "sha256:5cb5123b5cf9ee70584244246816e9114227e0b98ad9176eede6ad54bf5403fa"},
+]
+
+[[package]]
+name = "rich-click"
+version = "1.7.2"
+requires_python = ">=3.7"
+summary = "Format click help output nicely with rich"
+dependencies = [
+    "click>=7",
+    "rich>=10.7.0",
+    "typing-extensions",
+]
+files = [
+    {file = "rich-click-1.7.2.tar.gz", hash = "sha256:22f93439a3d65f4a04e07cd584f4d01d132d96899766af92ed287618156abbe2"},
+    {file = "rich_click-1.7.2-py3-none-any.whl", hash = "sha256:a42bcdcb8696c4ca7a3b1a39e1aba3d2cb64ad00690b4c022fdcb2cbccebc3fc"},
 ]
 
 [[package]]
