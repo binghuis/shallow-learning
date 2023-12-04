@@ -16,7 +16,6 @@
     `pdm up`
 
 
-- [失控的提示词](https://nbviewer.jupyter.org/github/binghuis/shallow-learning/blob/main/src/shallow_learning/prompt_engineering/out_of_control_prompt_engineering.ipynb)
-
-
 ### LLM
+
+- [失控的提示词](https://nbviewer.jupyter.org/github/binghuis/shallow-learning-llm/blob/main/src/shallow_learning_llm/prompt_engineering/out_of_control_prompt_engineering.ipynb)
