@@ -16,8 +16,10 @@
     `pdm up`
 
 
-### 提示词
+### Prompt Engineering
 
 - [失控的提示词](https://nbviewer.jupyter.org/github/binghuis/shallow-learning/blob/main/src/shallow_learning/prompt_engineering/out_of_control_prompt_engineering.ipynb)
 
-### 微调
+### Fine-tuning
+
+- LoRA、AdaLoRA
