@@ -16,7 +16,7 @@
     `pdm up`
 
 
-- [令人失望的提示词工程](https://nbviewer.jupyter.org/github/binghuis/shallow-learning/blob/main/src/shallow_learning/disappointing_prompt_engineering.ipynb)
+- [失控的提示词](https://nbviewer.jupyter.org/github/binghuis/shallow-learning/blob/main/src/shallow_learning/prompt_engineering/out_of_control_prompt_engineering.ipynb)
 
 
 ### LLM

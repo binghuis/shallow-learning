@@ -1,4 +1,5 @@
 import os
+import sys
 from typing import List
 from openai import AzureOpenAI
 from openai.types.chat.chat_completion_message_param import ChatCompletionMessageParam
@@ -20,13 +21,20 @@ def completion(
     messages: str | List[ChatCompletionMessageParam],
     temperature=0,
 ):
-    if isinstance(messages, str):
-        messages = [{"role": "user", "content": messages}]
-    stream = client.chat.completions.create(
-        model="gpt-3.5-turbo", messages=messages, stream=True, temperature=temperature
-    )
-    ret = ""
-    for chunk in stream:
-        if len(chunk.choices) > 0 and chunk.choices[0].delta.content:
-            ret = ret + chunk.choices[0].delta.content
-    return ret
+    try:
+        if isinstance(messages, str):
+            messages = [{"role": "user", "content": messages}]
+        stream = client.chat.completions.create(
+            model="gpt-3.5-turbo",
+            messages=messages,
+            stream=True,
+            temperature=temperature,
+        )
+        ret = ""
+        for chunk in stream:
+            if len(chunk.choices) > 0 and chunk.choices[0].delta.content:
+                # sys.stdout.write(chunk.choices[0].delta.content)
+                ret = ret + chunk.choices[0].delta.content
+        return ret
+    except Exception as err:
+        print(err)
